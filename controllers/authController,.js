@@ -72,7 +72,6 @@ const userLogin = async(req, res = response) =>{
                 msg:'Password does not exits'
             });
         }
-
         const token = await generateJWT(user.id, user.name);
     
 
